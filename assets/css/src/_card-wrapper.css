@@ -1,0 +1,11 @@
+.card-wrapper {
+    display: flex;
+}
+
+.car-wrapper--col {
+    flex-direction: column;
+}
+
+.car-wrapper--row {
+    flex-direction: row;
+}
