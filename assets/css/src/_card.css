@@ -3,6 +3,23 @@
     border: 1px solid var(--color-border);
     border-radius: 2px;
     border-bottom: 3px solid var(--color-theme-primary);
+    display: flex;
+}
+
+.card-image--square {
+    flex-direction: column;
+}
+
+.card-image--rectangle {
+    flex-direction: row;
+
+    & .card__image-wrapper {
+        width: 50%;
+    }
+
+    & .card__info {
+        width: 50%;
+    }
 }
 
 .card__info {
