@@ -28,6 +28,22 @@
 }
 */
 
+.panel {
+	
+}
+
+.panel--petrol {
+	background-color: var(--color-theme-secondary);
+}
+
+.inner {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: var(--spacing-md);
+	padding-left: var(--spacing-md);
+	max-width: var(--content-width);
+}
+
 .entry {
 	margin-bottom: 1rem;
 }
