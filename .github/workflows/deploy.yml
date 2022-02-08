@@ -16,5 +16,5 @@ jobs:
      
           script: |
             cd /var/www/html/wp-content/themes
-            git@github.com:alexefy/braithwaitetheme.git 
+            mkdir test
             echo 'Deployment successful to digital ocean' 
