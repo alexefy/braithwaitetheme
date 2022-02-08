@@ -19,3 +19,4 @@ jobs:
             cd /var/www/html/wp-content/themes
             git@github.com:alexefy/braithwaitetheme.git
             echo 'Deployment done'
+            
