@@ -18,6 +18,7 @@ jobs:
             cd ../
             cd var/www/html/wp-content/themes/
             rm -rf braithwaiteProd
+            rm -rf braithwaitetheme
             git clone git@github.com:alexefy/braithwaitetheme.git
             cd braithwaitetheme
             mv braithwaiteProd/ ..
