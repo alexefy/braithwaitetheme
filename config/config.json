@@ -1,1 +1,8 @@
-{}
+{
+    "theme": {
+        "slug": "braithwaiteProd",
+        "name": "braithwaite prod",
+        "author": "The WP Rig Contributors",
+        "PHPNamespace": "WP_Rig\\WP_Rig"
+    }
+}

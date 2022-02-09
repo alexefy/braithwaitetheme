@@ -17,5 +17,8 @@ jobs:
           script: |
             cd ../
             cd var/www/html/wp-content/themes/
+            rm -rf braithwaiteProd
             git clone git@github.com:alexefy/braithwaitetheme.git
+            cd braithwaitetheme
+            mv braithwaiteProd/ ..
             echo 'Deployment successful to digital ocean' 

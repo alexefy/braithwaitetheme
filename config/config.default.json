@@ -1,7 +1,7 @@
 {
   "theme": {
-    "slug": "wp-rig",
-    "name": "WP Rig",
+    "slug": "braithwaiteDev",
+    "name": "braithwaite development",
     "author": "The WP Rig Contributors",
     "PHPNamespace": "WP_Rig\\WP_Rig"
   },
