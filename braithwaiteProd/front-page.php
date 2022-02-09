@@ -24,7 +24,7 @@ if ( is_home() ) {
 		<div class="card-wrapper">
 			<div class="card card-image card-image--square">
 				<div class="card__image-wrapper">
-					<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+					<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 				</div>
 				<div class="card__info">
 					<h2 class="card__title">Test card title</h2>
@@ -41,7 +41,7 @@ if ( is_home() ) {
 
 			<div class="card card-image card-image--square">
 				<div class="card__image-wrapper">
-					<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+					<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 				</div>
 				<div class="card__info">
 					<h2 class="card__title">Test card title</h2>
@@ -58,7 +58,7 @@ if ( is_home() ) {
 
 			<div class="card card-image card-image--square">
 				<div class="card__image-wrapper">
-					<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+					<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 				</div>
 				<div class="card__info">
 					<h2 class="card__title">Test card title</h2>
@@ -77,7 +77,7 @@ if ( is_home() ) {
 		<div class="card-wrapper">
 			<div class="card card-image card-image--rectangle">
 				<div class="card__image-wrapper">
-					<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+					<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 				</div>
 				<div class="card__info">
 					<h2 class="card__title">Test card title</h2>
@@ -93,7 +93,7 @@ if ( is_home() ) {
 			</div>
 			<div class="card card-image card-image--rectangle">
 				<div class="card__image-wrapper">
-					<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+					<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 				</div>
 				<div class="card__info">
 					<h2 class="card__title">Test card title</h2>
@@ -123,7 +123,7 @@ if ( is_home() ) {
 									<li class="glide__slide">
 										<div class="card card-image card-image--square">
 											<div class="card__image-wrapper">
-												<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+												<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 											</div>
 											<div class="card__info">
 												<h2 class="card__title">Test card title</h2>
@@ -141,7 +141,7 @@ if ( is_home() ) {
 									<li class="glide__slide">
 										<div class="card card-image card-image--square">
 											<div class="card__image-wrapper">
-												<img src="http://braithwaite.local/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
+												<img src="/wp-content/uploads/2021/12/CCS_6990-scaled.jpg" />
 											</div>
 											<div class="card__info">
 												<h2 class="card__title">Test card title</h2>

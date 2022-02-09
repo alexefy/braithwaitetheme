@@ -4,5 +4,8 @@
         "name": "braithwaite prod",
         "author": "The WP Rig Contributors",
         "PHPNamespace": "WP_Rig\\WP_Rig"
+    },
+    "export": {
+        "compress": false
     }
 }
