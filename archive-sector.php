@@ -16,12 +16,11 @@ wp_rig()->print_styles( 'wp-rig-content' );
 ?>
 	<main id="primary" class="site-main">
 		<div class="inner">
+			<header class="page-header">
+				<h1 class="page-title">Our Sectors</h1>
+			</header>		
 			<?php
 			if ( have_posts() ) {
-
-				get_template_part( 'template-parts/content/page_header' );
-
-				// post_type_archive_title();
 
 				echo '<div class="card-wrapper">';
 				echo '<div class="card archive-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>';
