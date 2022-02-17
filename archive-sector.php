@@ -17,7 +17,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	<main id="primary" class="site-main">
 		<div class="inner">
 			<header class="page-header">
-				<h1 class="page-title">Our Sectors</h1>
+				<h1 class="page-title"><span>Our</span> Sectors</h1>
 			</header>		
 			<?php
 			if ( have_posts() ) {
