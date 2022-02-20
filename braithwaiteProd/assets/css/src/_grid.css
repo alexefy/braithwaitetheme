@@ -1,0 +1,84 @@
+.panel {
+	
+}
+
+.panel--brown {
+	background-color: var(--color-theme-tertiary);
+}
+
+.panel--petrol {
+	background-color: var(--color-theme-secondary);
+}
+
+.inner {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: var(--spacing-md);
+	padding-left: var(--spacing-md);
+	max-width: var(--content-width);
+}
+
+.inner--reset-max-width {
+	max-width: 2000px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-grow: 1;
+    padding: var(--spacing-s);
+    min-height: 100%;
+}
+
+.col-dir-col {
+    flex-direction: column;
+}
+
+.col-1 {
+    width: calc(100% / 12);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: 100%;
+    max-width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: 100%;
+    max-width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-6 {
+    width: calc(100% / 2);
+}
+
+.col-7 {
+    width: 100%;
+    max-width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: 100%;
+    max-width: calc(100% / 12 * 8);
+}
+
+.col-10 {
+    width: 100%;
+    max-width: calc(100% / 12 * 10);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col--center {
+    margin: auto;
+}

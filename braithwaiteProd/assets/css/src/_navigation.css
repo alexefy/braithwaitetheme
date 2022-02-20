@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin-left: var(--spacing-xl);
+}
+
+.menu-item a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-regular);
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+}
+
+.menu-item a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: var(--color-theme-secondary);
+    transition: all 0.2s linear;
+}
+
+.menu-item a:hover::after {
+    background-color: var(--color-theme-primary);
+}

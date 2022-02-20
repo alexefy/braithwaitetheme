@@ -1,0 +1,59 @@
+/**
+ * Custom Properties
+ * aka CSS variables.
+ *
+ * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ **/
+
+:root {
+	--content-width: 1440px;
+	--dropdown-symbol-width: 0.7em;
+
+	/* spacing units */
+	--spacing-xs: 6px;
+	--spacing-s: 12px;
+	--spacing-md: 24px;
+	--spacing-lg: 30px;
+	--spacing-xl: 60px;
+	
+
+	/* Typography */
+	--global-font-family: "Roboto", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--highlight-font-family: "Roboto", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--global-font-size: 16;
+	--global-font-line-height: 1.4;
+
+	/* Custom editor font sizes */
+	--font-size-small: calc(16 / var(--global-font-size) * 1rem);
+	--font-size-regular: calc(var(--global-font-size) / 16 * 1rem);
+	--font-size-large: calc(32 / var(--global-font-size) * 1rem);
+	--font-size-larger: calc(48 / var(--global-font-size) * 1rem);
+	--font-size-hero: calc(90 / var(--global-font-size) * 1rem);
+
+	/* Colors */
+	--global-font-color: #656565;
+	--border-color-dark: #333;
+	--border-color-light: #ccc;
+	--color-link: #0073aa;
+	--color-link-visited: #333;
+	--color-link-active: #00a0d2;
+	--color-quote-border: #000;
+	--color-quote-citation: #6c7781;
+	--color-border: #d3d3d3;
+
+	/* Custom editor colors */
+	--color-white: #fff;
+	--color-theme-primary: #e95c0c;
+	--color-theme-secondary: #113342;
+	--color-theme-tertiary: #240002;
+	--color-theme-red: #c0392b;
+	--color-theme-green: #27ae60;
+	--color-theme-blue: #2980b9;
+	--color-theme-yellow: #f1c40f;
+	--color-theme-black: #1c2833;
+	--color-theme-grey: #d6cecb;
+	--color-theme-white: #ecf0f1;
+	--color-custom-daylight: #97c0b7;
+	--color-custom-sun: #eee9d1;
+	--color-highlight: #f5a152;
+}
