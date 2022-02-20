@@ -10,6 +10,13 @@
     left: 0;
     top: 0;
     display: flex;
+    z-index: 100;
+}
+
+.page-template-front-page {
+    & .header {
+        background: transparent;
+    }
 }
 
 .header__inner {
