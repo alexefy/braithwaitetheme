@@ -1,0 +1,22 @@
+.col-glider {
+  position: relative;
+  display: block;
+}
+
+.tns-inner {
+  margin-left: 0 !important;
+  position: relative;
+}
+
+.tns-inner::after {
+  content: "";
+  display: block;
+  width: 150px;
+  background: var(--color-theme-secondary);
+  opacity: 0.6;
+  right: -150px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
