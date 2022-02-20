@@ -28,20 +28,16 @@
 }
 */
 
-.panel {
-	
+.feature-text-split {
+	padding: var(--spacing-xl) 0;
+	margin: auto;
+	max-width: 500px;
 }
 
-.panel--petrol {
-	background-color: var(--color-theme-secondary);
-}
-
-.inner {
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: var(--spacing-md);
-	padding-left: var(--spacing-md);
-	max-width: var(--content-width);
+.feature-image-split {
+	background-size: cover;
+	background-position: center;
+	min-height: 80vh;
 }
 
 .entry {
