@@ -64,3 +64,44 @@ require get_template_directory() . '/inc/functions.php';
 
 // Initialize the theme.
 call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
+
+add_action('init', 'create_post_type_sector'); 
+
+function create_post_type_sector()
+{
+    register_taxonomy_for_object_type('category', 'sector'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'sector');
+    register_post_type('sector', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Sector', 'braithwaitetheme'), // Rename these to suit
+            'singular_name' => __('Sector', 'braithwaitetheme'),
+            'add_new' => __('Add New', 'braithwaitetheme'),
+            'add_new_item' => __('Add New Sector', 'braithwaitetheme'),
+            'edit' => __('Edit', 'braithwaitetheme'),
+            'edit_item' => __('Edit Sector', 'braithwaitetheme'),
+            'new_item' => __('New Sector', 'braithwaitetheme'),
+            'view' => __('View Sector', 'braithwaitetheme'),
+            'view_item' => __('View Sector', 'braithwaitetheme'),
+            'search_items' => __('Search Sector', 'braithwaitetheme'),
+            'not_found' => __('No Sector found', 'braithwaitetheme'),
+            'not_found_in_trash' => __('No Sector found in Trash', 'braithwaitetheme')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-building',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    flush_rewrite_rules();
+}

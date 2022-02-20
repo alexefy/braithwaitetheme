@@ -36,6 +36,11 @@ h6 {
 	margin-bottom: 1em;
 }
 
+.page-title span {
+	padding-bottom: 1rem;
+	border-bottom: 2px solid var(--color-theme-primary);
+}
+
 dfn,
 cite,
 em,
