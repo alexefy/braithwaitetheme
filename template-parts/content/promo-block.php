@@ -9,7 +9,9 @@
                             <path d="M0 24L11.9241 9H20.2918L25 16.5L20.9202 23.7931L0 24Z" fill="white"/>
                         </svg>
                     </div>
-                    <div class="promo-block__text"><?php the_content(); ?></div>
+                    <div class="promo-block__text">
+                        <p>Due to the constant quality of workmanship based on every aspect of each individual project across all sectors and competitive tendering, Braithwaite Group is now one of the fastest growing construction companies in the UK.</p>
+                    </div>
                 </div>
             </div>
         </div>
