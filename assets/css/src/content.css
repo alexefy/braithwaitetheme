@@ -154,8 +154,9 @@
 ## Archive
 --------------------------------------------------------------*/
 .archive-description {
-	background: var(--color-theme-secondary) url('../svg/angle-stroke-bg.svg') no-repeat -50% -150%;
-    color: white;
+	background: var(--color-theme-secondary) url('../svg/braithwaite-diamond-stroke.svg') no-repeat 0 100%;
+    background-size: 100%;
+	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
