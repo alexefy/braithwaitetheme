@@ -23,7 +23,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			if ( have_posts() ) {
 
 				echo '<div class="card-wrapper">';
-				echo '<div class="archive-description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>';
+				echo '<div class="archive-description"><div class="archive-description__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>';
 				while ( have_posts() ) {
 					the_post();
 

@@ -26,6 +26,7 @@
 	/* Custom editor font sizes */
 	--font-size-small: calc(16 / var(--global-font-size) * 1rem);
 	--font-size-regular: calc(var(--global-font-size) / 16 * 1rem);
+	--font-size-medium: calc(24 / var(--global-font-size) * 1rem);
 	--font-size-large: calc(32 / var(--global-font-size) * 1rem);
 	--font-size-larger: calc(48 / var(--global-font-size) * 1rem);
 	--font-size-hero: calc(90 / var(--global-font-size) * 1rem);

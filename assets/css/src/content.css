@@ -154,20 +154,30 @@
 ## Archive
 --------------------------------------------------------------*/
 .archive-description {
-	background-color: #113342;
-    position: relative;
+	background: var(--color-theme-secondary) url('../svg/angle-stroke-bg.svg') no-repeat -50% -150%;
+    color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--font-size-medium);
+	position: relative;
     margin-bottom: 1rem;
 }
 
 .archive-description:before {
 	content: "";
-	background-color: #113342;
+	background-color: var(--color-theme-secondary);
     position: absolute;
     display: block;
 	left: -50vw;
     width: 50vw;
     height: 100%;
 
+}
+
+.archive-description__content {
+	max-width: 75%;
 }
 
 @media screen and (min-width: 51.250em) {
