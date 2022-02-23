@@ -179,6 +179,7 @@
 
 .archive-description__content {
 	max-width: 75%;
+	padding: var(--spacing-md) 0;
 }
 
 @media screen and (min-width: 51.250em) {
