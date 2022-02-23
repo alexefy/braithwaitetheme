@@ -66,6 +66,7 @@ require get_template_directory() . '/inc/functions.php';
 call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
 
 add_action('init', 'create_post_type_sector'); 
+add_action('init', 'create_post_type_case_study');
 
 function create_post_type_sector()
 {
@@ -91,6 +92,46 @@ function create_post_type_sector()
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
         'menu_icon' => 'dashicons-building',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    flush_rewrite_rules();
+}
+
+function create_post_type_case_study()
+{
+    register_taxonomy_for_object_type('category', 'case-study'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'case-study');
+    register_post_type('case-study', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Case Study', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Case Study', 'html5blank'),
+            'add_new' => __('Add New', 'html5blank'),
+            'add_new_item' => __('Add New Case Study', 'html5blank'),
+            'edit' => __('Edit', 'html5blank'),
+            'edit_item' => __('Edit Case Study', 'html5blank'),
+            'new_item' => __('New Case Study', 'html5blank'),
+            'view' => __('View Case Study', 'html5blank'),
+            'view_item' => __('View Case Study', 'html5blank'),
+            'search_items' => __('Search Case Study', 'html5blank'),
+            'not_found' => __('No Case Study found', 'html5blank'),
+            'not_found_in_trash' => __('No Case Study found in Trash', 'html5blank')
+        ),
+        'public' => true,
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-clipboard',
+        'query_var' => true,
         'supports' => array(
             'title',
             'editor',
