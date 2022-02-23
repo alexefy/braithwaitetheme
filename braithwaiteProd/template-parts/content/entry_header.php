@@ -2,7 +2,7 @@
 /**
  * Template part for displaying a post's header
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;

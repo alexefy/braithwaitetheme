@@ -4,14 +4,14 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
 
 get_header();
 
-wp_rig()->print_styles( 'wp-rig-content' );
+braithwaiteProd()->print_styles( 'braithwaiteProd-content' );
 
 ?>
 	<main id="primary" class="site-main">

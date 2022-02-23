@@ -29,14 +29,16 @@ h6 {
 }
 
 .entry-title-singular,
-.page-title {
+.page-title,
+.title__main {
 	font-size: 2.5rem;
 	line-height: 1.4;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-.page-title span {
+.page-title span,
+.title__main span {
 	padding-bottom: 1rem;
 	border-bottom: 2px solid var(--color-theme-primary);
 }

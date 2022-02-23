@@ -2,7 +2,7 @@
 /**
  * WP_Rig\WP_Rig\Custom_Background\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\Custom_Background;
@@ -40,7 +40,7 @@ class Component implements Component_Interface {
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'wp_rig_custom_background_args',
+				'braithwaiteProd_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',

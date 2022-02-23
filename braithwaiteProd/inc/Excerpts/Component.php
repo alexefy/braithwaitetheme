@@ -2,13 +2,13 @@
 /**
  * WP_Rig\WP_Rig\Excerpts\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\Excerpts;
 
 use WP_Rig\WP_Rig\Component_Interface;
-use function WP_Rig\WP_Rig\wp_rig;
+use function WP_Rig\WP_Rig\braithwaiteProd;
 use function add_filter;
 
 /**
@@ -41,7 +41,7 @@ class Component implements Component_Interface {
 			'<a href="%1$s" class="more-link">%2$s</a>',
 			esc_url( get_permalink( get_the_ID() ) ),
 			/* translators: %s: Post title. */
-			sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wp-rig' ), get_the_title( get_the_ID() ) )
+			sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'braithwaiteProd' ), get_the_title( get_the_ID() ) )
 		);
 		return ' &hellip; ' . $link;
 	}

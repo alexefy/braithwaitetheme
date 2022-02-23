@@ -4,14 +4,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
 
 get_header();
 
-wp_rig()->print_styles( 'wp-rig-content' );
+braithwaiteProd()->print_styles( 'braithwaiteProd-content' );
 
 ?>
 	<main id="primary" class="site-main">
@@ -23,7 +23,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			if ( have_posts() ) {
 
 				echo '<div class="card-wrapper">';
-				echo '<div class="archive-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>';
+				echo '<div class="archive-description"><div class="archive-description__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>';
 				while ( have_posts() ) {
 					the_post();
 
@@ -37,6 +37,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			}
 			?>
 		</div>
+		<?php get_template_part( 'template-parts/content/promo-block' ); ?>
+		<?php get_template_part( 'template-parts/content/our-services' ); ?>
 	</main><!-- #primary -->
 <?php
 get_footer();

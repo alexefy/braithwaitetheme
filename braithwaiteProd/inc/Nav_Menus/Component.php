@@ -2,7 +2,7 @@
 /**
  * WP_Rig\WP_Rig\Nav_Menus\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\Nav_Menus;
@@ -21,8 +21,8 @@ use function wp_nav_menu;
  * Class for managing navigation menus.
  *
  * Exposes template tags:
- * * `wp_rig()->is_primary_nav_menu_active()`
- * * `wp_rig()->display_primary_nav_menu( array $args = array() )`
+ * * `braithwaiteProd()->is_primary_nav_menu_active()`
+ * * `braithwaiteProd()->display_primary_nav_menu( array $args = array() )`
  */
 class Component implements Component_Interface, Templating_Component_Interface {
 
@@ -58,12 +58,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	public function hooks() {
 		add_action( 'after_setup_theme', array( $this, 'action_register_nav_menus' ) );
 		add_filter( 'walker_nav_menu_start_el', array( $this, 'filter_primary_nav_menu_dropdown_symbol' ), 10, 4 );
-		add_filter( 'wp_rig_menu_toggle_button', array( $this, 'customize_mobile_menu_toggle' ) );
-		add_filter( 'wp_rig_site_navigation_classes', array( $this, 'customize_mobile_menu_nav_classes' ) );
+		add_filter( 'braithwaiteProd_menu_toggle_button', array( $this, 'customize_mobile_menu_toggle' ) );
+		add_filter( 'braithwaiteProd_site_navigation_classes', array( $this, 'customize_mobile_menu_nav_classes' ) );
 	}
 
 	/**
-	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `wp_rig()`.
+	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `braithwaiteProd()`.
 	 *
 	 * @return array Associative array of $method_name => $callback_info pairs. Each $callback_info must either be
 	 *               a callable or an array with key 'callable'. This approach is used to reserve the possibility of
@@ -81,7 +81,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 */
 	private function get_theme_settings_config() {
 		$theme_settings_json  = file_get_contents( get_theme_file_path() . '/inc/EZ_Customizer/themeCustomizeSettings.json' );
-		$this->theme_settings = apply_filters( 'wp_rig_customizer_settings', json_decode( $theme_settings_json, FILE_USE_INCLUDE_PATH ) );
+		$this->theme_settings = apply_filters( 'braithwaiteProd_customizer_settings', json_decode( $theme_settings_json, FILE_USE_INCLUDE_PATH ) );
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	public function action_register_nav_menus() {
 		register_nav_menus(
 			array(
-				static::PRIMARY_NAV_MENU_SLUG => esc_html__( 'Primary', 'wp-rig' ),
+				static::PRIMARY_NAV_MENU_SLUG => esc_html__( 'Primary', 'braithwaiteProd' ),
 			)
 		);
 	}
@@ -161,7 +161,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @return string Mobile Nav Toggle HTML.
 	 */
 	public function customize_mobile_menu_toggle() {
-		return '<button class="menu-toggle icon" aria-label="' . esc_html__( 'Open menu', 'wp-rig' ) . '" aria-controls="primary-menu" aria-expanded="false">
+		return '<button class="menu-toggle icon" aria-label="' . esc_html__( 'Open menu', 'braithwaiteProd' ) . '" aria-controls="primary-menu" aria-expanded="false">
 					' . file_get_contents( get_theme_file_path() . '/assets/svg/menu-icon.svg' ) . '
 					' . file_get_contents( get_theme_file_path() . '/assets/svg/close-icon.svg' ) . '
 					</button>';
@@ -173,6 +173,6 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @return string Mobile Nav Toggle classes.
 	 */
 	public function customize_mobile_menu_nav_classes() {
-		return esc_html__( 'main-navigation nav--toggle-sub nav--toggle-small icon-nav', 'wp-rig' );
+		return esc_html__( 'main-navigation nav--toggle-sub nav--toggle-small icon-nav', 'braithwaiteProd' );
 	}
 }

@@ -4,19 +4,19 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
 
-if ( ! wp_rig()->is_primary_sidebar_active() ) {
+if ( ! braithwaiteProd()->is_primary_sidebar_active() ) {
 	return;
 }
 
-wp_rig()->print_styles( 'wp-rig-sidebar', 'wp-rig-widgets' );
+braithwaiteProd()->print_styles( 'braithwaiteProd-sidebar', 'braithwaiteProd-widgets' );
 
 ?>
 <aside id="secondary" class="primary-sidebar widget-area">
-	<h2 class="screen-reader-text"><?php esc_attr_e( 'Asides', 'wp-rig' ); ?></h2>
-	<?php wp_rig()->display_primary_sidebar(); ?>
+	<h2 class="screen-reader-text"><?php esc_attr_e( 'Asides', 'braithwaiteProd' ); ?></h2>
+	<?php braithwaiteProd()->display_primary_sidebar(); ?>
 </aside><!-- #secondary -->

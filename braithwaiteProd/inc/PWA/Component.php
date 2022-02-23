@@ -2,7 +2,7 @@
 /**
  * WP_Rig\WP_Rig\PWA\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\PWA;

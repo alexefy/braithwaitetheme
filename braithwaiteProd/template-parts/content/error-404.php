@@ -2,7 +2,7 @@
 /**
  * Template part for displaying the page content when a 404 error has occurred
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
@@ -13,18 +13,18 @@ namespace WP_Rig\WP_Rig;
 
 	<div class="page-content">
 		<p>
-			<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-rig' ); ?>
+			<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'braithwaiteProd' ); ?>
 		</p>
 
 		<?php
 		get_search_form();
 
-		wp_rig()->print_styles( 'wp-rig-widgets' );
+		braithwaiteProd()->print_styles( 'braithwaiteProd-widgets' );
 		the_widget( 'WP_Widget_Recent_Posts' );
 		?>
 
 		<div class="widget widget_categories">
-			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'wp-rig' ); ?></h2>
+			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'braithwaiteProd' ); ?></h2>
 			<ul>
 			<?php
 			wp_list_categories(
@@ -42,7 +42,7 @@ namespace WP_Rig\WP_Rig;
 
 		<?php
 		/* translators: %1$s: smiley */
-		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'wp-rig' ), convert_smilies( ':)' ) ) . '</p>';
+		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'braithwaiteProd' ), convert_smilies( ':)' ) ) . '</p>';
 		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
 		the_widget( 'WP_Widget_Tag_Cloud' );

@@ -2,7 +2,7 @@
 /**
  * WP_Rig\WP_Rig\Editor\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\Editor;
@@ -62,57 +62,57 @@ class Component implements Component_Interface {
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'wp-rig' ),
+					'name'  => __( 'Primary', 'braithwaiteProd' ),
 					'slug'  => 'theme-primary',
 					'color' => '#e36d60',
 				),
 				array(
-					'name'  => __( 'Secondary', 'wp-rig' ),
+					'name'  => __( 'Secondary', 'braithwaiteProd' ),
 					'slug'  => 'theme-secondary',
 					'color' => '#41848f',
 				),
 				array(
-					'name'  => __( 'Red', 'wp-rig' ),
+					'name'  => __( 'Red', 'braithwaiteProd' ),
 					'slug'  => 'theme-red',
 					'color' => '#C0392B',
 				),
 				array(
-					'name'  => __( 'Green', 'wp-rig' ),
+					'name'  => __( 'Green', 'braithwaiteProd' ),
 					'slug'  => 'theme-green',
 					'color' => '#27AE60',
 				),
 				array(
-					'name'  => __( 'Blue', 'wp-rig' ),
+					'name'  => __( 'Blue', 'braithwaiteProd' ),
 					'slug'  => 'theme-blue',
 					'color' => '#2980B9',
 				),
 				array(
-					'name'  => __( 'Yellow', 'wp-rig' ),
+					'name'  => __( 'Yellow', 'braithwaiteProd' ),
 					'slug'  => 'theme-yellow',
 					'color' => '#F1C40F',
 				),
 				array(
-					'name'  => __( 'Black', 'wp-rig' ),
+					'name'  => __( 'Black', 'braithwaiteProd' ),
 					'slug'  => 'theme-black',
 					'color' => '#1C2833',
 				),
 				array(
-					'name'  => __( 'Grey', 'wp-rig' ),
+					'name'  => __( 'Grey', 'braithwaiteProd' ),
 					'slug'  => 'theme-grey',
 					'color' => '#95A5A6',
 				),
 				array(
-					'name'  => __( 'White', 'wp-rig' ),
+					'name'  => __( 'White', 'braithwaiteProd' ),
 					'slug'  => 'theme-white',
 					'color' => '#ECF0F1',
 				),
 				array(
-					'name'  => __( 'Dusty daylight', 'wp-rig' ),
+					'name'  => __( 'Dusty daylight', 'braithwaiteProd' ),
 					'slug'  => 'custom-daylight',
 					'color' => '#97c0b7',
 				),
 				array(
-					'name'  => __( 'Dusty sun', 'wp-rig' ),
+					'name'  => __( 'Dusty sun', 'braithwaiteProd' ),
 					'slug'  => 'custom-sun',
 					'color' => '#eee9d1',
 				),
@@ -129,26 +129,26 @@ class Component implements Component_Interface {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'wp-rig' ),
-					'shortName' => __( 'S', 'wp-rig' ),
+					'name'      => __( 'Small', 'braithwaiteProd' ),
+					'shortName' => __( 'S', 'braithwaiteProd' ),
 					'size'      => 16,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Medium', 'wp-rig' ),
-					'shortName' => __( 'M', 'wp-rig' ),
+					'name'      => __( 'Medium', 'braithwaiteProd' ),
+					'shortName' => __( 'M', 'braithwaiteProd' ),
 					'size'      => 25,
 					'slug'      => 'medium',
 				),
 				array(
-					'name'      => __( 'Large', 'wp-rig' ),
-					'shortName' => __( 'L', 'wp-rig' ),
+					'name'      => __( 'Large', 'braithwaiteProd' ),
+					'shortName' => __( 'L', 'braithwaiteProd' ),
 					'size'      => 31,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Larger', 'wp-rig' ),
-					'shortName' => __( 'XL', 'wp-rig' ),
+					'name'      => __( 'Larger', 'braithwaiteProd' ),
+					'shortName' => __( 'XL', 'braithwaiteProd' ),
 					'size'      => 39,
 					'slug'      => 'larger',
 				),

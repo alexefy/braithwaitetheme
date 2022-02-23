@@ -2,14 +2,14 @@
 /**
  * WP_Rig\WP_Rig\Scripts\Component class
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig\Scripts;
 
 use WP_Rig\WP_Rig\Component_Interface;
 use WP_Rig\WP_Rig\Templating_Component_Interface;
-use function WP_Rig\WP_Rig\wp_rig;
+use function WP_Rig\WP_Rig\braithwaiteProd;
 use function add_action;
 use function wp_enqueue_script;
 use function wp_register_script;
@@ -25,7 +25,7 @@ use function apply_filters;
  * Class for managing javascript files.
  *
  * Exposes template tags:
- * * `wp_rig()->print_scripts()`
+ * * `braithwaiteProd()->print_scripts()`
  */
 class Component implements Component_Interface, Templating_Component_Interface {
 
@@ -66,7 +66,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	}
 
 	/**
-	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `wp_rig()`.
+	 * Gets template tags to expose as methods on the Template_Tags class instance, accessible through `braithwaiteProd()`.
 	 *
 	 * @return array Associative array of $method_name => $callback_info pairs. Each $callback_info must either be
 	 *               a callable or an array with key 'callable'. This approach is used to reserve the possibility of
@@ -90,7 +90,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		$js_files = $this->get_js_files();
 		foreach ( $js_files as $handle => $data ) {
 			$src     = $js_uri . $data['file'];
-			$version = wp_rig()->get_asset_version( $js_dir . $data['file'] );
+			$version = braithwaiteProd()->get_asset_version( $js_dir . $data['file'] );
 
 			/*
 			 * Enqueue global JavaScript files immediately and register the other ones for later use.
@@ -145,7 +145,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				$is_valid = isset( $js_files[ $handle ] ) && ! $js_files[ $handle ]['global'];
 				if ( ! $is_valid ) {
 					/* translators: %s: JS handle */
-					_doing_it_wrong( __CLASS__ . '::print_scripts()', esc_html( sprintf( __( 'Invalid theme JS handle: %s', 'wp-rig' ), $handle ) ), 'WP Rig 2.0.0' );
+					_doing_it_wrong( __CLASS__ . '::print_scripts()', esc_html( sprintf( __( 'Invalid theme JS handle: %s', 'braithwaiteProd' ), $handle ) ), 'braithwaite prod 2.0.0' );
 				}
 				return $is_valid;
 			}
@@ -169,12 +169,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$js_files = array(
-			'wp-rig-custom' => array(
+			'braithwaiteProd-custom' => array(
 				'file'    => 'custom.min.js',
 				'loading' => 'defer',
 				'global'  => false,
 			),
-			'wp-rig-global' => array(
+			'braithwaiteProd-global' => array(
 				'file'   => 'global.min.js',
 				'global' => true,
 			),
@@ -189,7 +189,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		 *                         enqueued instead of just being registered) and 'preload_callback' (callback)
 		 *                         function determining whether the file should be preloaded for the current request).
 		 */
-		$js_files = apply_filters( 'wp_rig_js_files', $js_files );
+		$js_files = apply_filters( 'braithwaiteProd_js_files', $js_files );
 
 		$this->js_files = array();
 		foreach ( $js_files as $handle => $data ) {

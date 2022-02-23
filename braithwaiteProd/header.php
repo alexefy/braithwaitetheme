@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
@@ -23,7 +23,7 @@ namespace WP_Rig\WP_Rig;
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<?php
-	if ( ! wp_rig()->is_amp() ) {
+	if ( ! braithwaiteProd()->is_amp() ) {
 		?>
 		<script>document.documentElement.classList.remove( 'no-js' );</script>
 		<?php
@@ -36,7 +36,7 @@ namespace WP_Rig\WP_Rig;
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'braithwaiteProd' ); ?></a>
 
 	<header id="masthead" class="header">
 		<div class="header__inner">

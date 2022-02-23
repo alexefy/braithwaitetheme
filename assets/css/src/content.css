@@ -154,14 +154,21 @@
 ## Archive
 --------------------------------------------------------------*/
 .archive-description {
-	background-color: #113342;
-    position: relative;
+	background: var(--color-theme-secondary) url('../svg/braithwaite-diamond-stroke.svg') no-repeat 0 100%;
+    background-size: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--font-size-medium);
+	position: relative;
     margin-bottom: 1rem;
 }
 
 .archive-description:before {
 	content: "";
-	background-color: #113342;
+	background-color: var(--color-theme-secondary);
     position: absolute;
     display: block;
 	left: -50vw;
@@ -170,18 +177,66 @@
 
 }
 
+.archive-description__content {
+	max-width: 75%;
+	padding: var(--spacing-md) 0;
+}
+
 @media screen and (min-width: 51.250em) {
-    .archive-description {
+    .archive-description,
+	.service {
         flex: 0 1 48%;
     }
 }
 
 @media screen and (min-width: 73.750em) {
-    .archive-description {
+    .archive-description,
+	.service {
         flex: 0 1 32%;
     }
 }
 
+.services {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	padding: 80px var(--spacing-md);
+	text-align: center;
+}
+
+.service__title {
+	color: var(--color-theme-secondary);
+	font-weight: 500;
+}
+
+.service--build {
+	background-image: url('../svg/icon-build-consultancy.svg');
+}
+
+.service--health {
+	background-image: url('../svg/icon-health.svg');
+}
+
+.service--sustainable {
+	background-image: url('../svg/icon-sustainable.svg');
+}
+
+.service--budget {
+	background-image: url('../svg/icon-budget-planning.svg');
+}
+
+.service--project {
+	background-image: url('../svg/icon-project-management.svg');
+}
+
+.service--community {
+	background-image: url('../svg/icon-community-building.svg');
+}
 /*--------------------------------------------------------------
 ## Alignments
 --------------------------------------------------------------*/

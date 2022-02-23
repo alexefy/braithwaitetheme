@@ -2,7 +2,7 @@
 /**
  * Template part for displaying the header navigation menu
  *
- * @package wp_rig
+ * @package braithwaiteProd
  */
 
 namespace WP_Rig\WP_Rig;
@@ -11,6 +11,6 @@ namespace WP_Rig\WP_Rig;
 
 <nav>
 	<div class="primary-menu-container">
-		<?php wp_rig()->display_primary_nav_menu( array( 'menu_id' => 'primary-menu' ) ); ?>
+		<?php braithwaiteProd()->display_primary_nav_menu( array( 'menu_id' => 'primary-menu' ) ); ?>
 	</div>
 </nav><!-- #site-navigation -->
