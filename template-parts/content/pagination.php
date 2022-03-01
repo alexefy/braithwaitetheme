@@ -7,6 +7,8 @@
 
 namespace WP_Rig\WP_Rig;
 
+wp_paginate(); 
+
 the_posts_pagination(
 	array(
 		'mid_size'           => 2,
