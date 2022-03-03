@@ -37,7 +37,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			}
 			?>
 		</div>
-		<?php get_template_part( 'template-parts/content/promo-block' ); ?>
+		<div class="panel panel--petrol">
+			<?php get_template_part( 'template-parts/content/promo-block' ); ?>
+		</div>
 		<?php get_template_part( 'template-parts/content/our-services' ); ?>
 	</main><!-- #primary -->
 <?php

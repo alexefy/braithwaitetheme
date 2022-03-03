@@ -5,10 +5,20 @@
 
 .promo-block__text {
     font-size: var(--font-size-large);
-    color: var(--color-white);
     line-height: 1.4;
 
     & p:last-of-type {
         margin-bottom: 0;
     }
 }
+
+.panel--brown,
+.panel--petrol {
+    & .promo-block__text {
+        color: var(--color-white);
+    }
+}
+/* 
+.panel--petrol .promo-block__text {
+    color: var(--color-white);
+} */
