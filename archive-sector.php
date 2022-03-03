@@ -19,23 +19,23 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			<header class="page-header">
 				<h1 class="page-title"><span>Our</span> Sectors</h1>
 			</header>		
-			<?php
-			if ( have_posts() ) {
+			<div class="card-wrapper">
+				<?php
+					if ( have_posts() ) {
 
-				echo '<div class="card-wrapper">';
-				echo '<div class="archive-description"><div class="archive-description__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>';
-				while ( have_posts() ) {
-					the_post();
+						echo '<div class="archive-description"><div class="archive-description__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>';
+						while ( have_posts() ) {
+							the_post();
 
-					get_template_part( 'template-parts/content/entry-card', get_post_type() );
-				}
-				echo '</div>';
+							get_template_part( 'template-parts/content/entry-card', get_post_type() );
+						}
+						echo '</div>';
 
-				get_template_part( 'template-parts/content/pagination' );
-			} else {
-				get_template_part( 'template-parts/content/error' );
-			}
-			?>
+						get_template_part( 'template-parts/content/pagination' );
+					} else {
+						get_template_part( 'template-parts/content/error' );
+					}
+				?>
 		</div>
 		<div class="panel panel--petrol">
 			<?php get_template_part( 'template-parts/content/promo-block' ); ?>

@@ -41,7 +41,6 @@ wp_rig()->print_styles( 'wp-rig-content' );
 							get_template_part( 'template-parts/content/error' );
 						}
 					?>
-				</div>
 			</div>
 		</div>	
 		<div class="panel">
